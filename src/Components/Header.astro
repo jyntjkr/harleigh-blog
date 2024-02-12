@@ -1,0 +1,100 @@
+---
+import Theme from '../Components/theme.astro';
+---
+<style>
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    position: relative;
+    
+  }
+
+  /* #f2f2f2; */
+
+  .navbar-logo {
+    margin-right: auto;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .navbar-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+
+  .navbar-logo p a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+
+
+    .navbar-links {
+      display: none;
+    }
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      background-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffd1ff, #a1ffce);
+      padding: 10px;
+      align-items: center;
+      z-index: 2;
+      border-radius: 10px;
+      color:#6a11cb;
+      font-weight: bold
+    }
+  }
+
+</style>
+
+
+
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <p><a href="/">Harleigh's Blog</a></p>
+        </div>
+        <div class="navbar-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <!-- <a href="#">Services</a> -->
+          <!-- <a href="/contact">Contact</a> -->
+    
+          <!-- <Theme /> -->
+    
+        </div>
+        <div class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>     
+
+        
+</header>
