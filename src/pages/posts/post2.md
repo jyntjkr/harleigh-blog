@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: 'first post'
+title: 'second post'
 pubDate: 2022-07-01
 description: 'Blog post'
 author: 'Harleigh'
@@ -8,4 +8,4 @@ tags: [""]
 ---
 
 
-- Hello This is post 1.
+- ***Hello This is post 2.***
