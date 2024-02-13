@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../layouts/BlogLayout.astro
 title: 'first post'
 pubDate: 2022-07-01
 description: 'Blog post'
@@ -8,4 +8,4 @@ tags: [""]
 ---
 
 
-- Hello This is post 1.
+- Hello This is post 1. 

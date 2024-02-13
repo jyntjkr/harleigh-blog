@@ -14,6 +14,7 @@
     background-size: cover;
     background-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffd1ff, #a1ffce);
     position: relative;
+    cursor: default;
   }
   
   /* html:before {
@@ -31,7 +32,7 @@
   body {
     margin: 17px auto 30px auto;
     width: 100%;
-    max-width: 80ch;
+    max-width: 70ch;
     padding: 1rem;
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
@@ -43,6 +44,25 @@
     margin: 20px auto;
     line-height: 1.7rem;
   }
+
+  hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    margin: 1.5rem 0;
+    background: #8f8e8b;
+  }
+
+  .blog-headering .read-full:hover {
+    color: #000080;
+  }
+
+  .about-info p {
+    font-size: 19px;
+    
+  }
+
+  /* #ff9a9e */
 
   .dark html {
     background-color: rgb(16, 15, 15);

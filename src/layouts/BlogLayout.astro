@@ -1,0 +1,34 @@
+---
+import Header from '../Components/Header.astro';
+import '../styles/global.css';
+const{frontmatter} = Astro.props;
+---
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel=" shortcut icon" type="image/x-icon" href="/favicon-32x32.png?" />
+		
+		<script src="https://kit.fontawesome.com/8ac353acb4.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+		<Header />
+        <div class="blog-headering">
+            <h1 class="blog-heading" style="margin: 20px auto 0px auto; cursor:default;">{frontmatter.title}</h1>
+            <div class="date-screen" style="display: flex; justify-content: space-between;">
+                <p>{frontmatter.pubDate.slice(0,10)}</p>
+                <p class="read-full" id="fullscreen-element" style="cursor: pointer;">
+             <em>Read in Full Screen–></em></p>
+            </div>
+            
+        </div>
+        
+        <hr style="margin: 0.5rem 0 1.5rem 0;">
+        <slot />
+		<script src="../scripts/scripts.js"></script>
+
+	</body>
+</html>
