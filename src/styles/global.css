@@ -75,8 +75,15 @@
       font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
       font-size: 17px;
     }
+    
 
     
+      .card__title {
+        font-size: 24px !important;
+      }
+    
+
+
   }
 
   .dark html {
@@ -99,29 +106,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   :root {
     --font-family-primary: 'Vollkorn', serif;
     --font-family-secondary: 'PT Sans', sans-serif;
     
     --font-size-title: 32px;
+    --font-size-title-media: 20px;
     --line-height-title: 1.4;
     --font-size-caption: 14px;
     --line-height-caption: 1.2;
@@ -217,5 +207,11 @@
     background-position: 0 85%;
     padding: 0 4px;
     margin-left: -4px;
+
+    @include mediaBig {
+      .card__title {
+        font-size: 24px; 
+      }
+    }
   }
   
