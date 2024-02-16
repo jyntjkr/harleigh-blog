@@ -30,7 +30,7 @@
   } */
   
   body {
-    margin: 17px auto 30px auto;
+    margin: 17px auto 10px auto;
     width: 100%;
     max-width: 70ch;
     padding: 1rem;
@@ -58,8 +58,12 @@
   }
 
   .about-info p {
-    font-size: 19px;
-    
+    font-size: 17px; 
+  }
+
+  .footer p a {
+    text-decoration: udnerline;
+    color: black;
   }
 
 
@@ -67,9 +71,9 @@
   @media screen and (max-width: 768px) {
 
     body {
-      margin: 1px auto 30px auto;
+      margin: 1px auto 5px auto;
       width: 100%;
-      max-width: 70ch;
+      max-width: 44ch;
       padding: 1rem;
       line-height: 1.5;
       font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
@@ -80,6 +84,10 @@
     
       .card__title {
         font-size: 24px !important;
+      }
+
+      .about-info p {
+        font-size: 16px;
       }
     
 
