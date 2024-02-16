@@ -30,7 +30,6 @@
   } */
   
   body {
-    height: 100%;
     margin: 17px auto 10px auto;
     width: 100%;
     max-width: 70ch;
@@ -70,6 +69,10 @@
 
 
   @media screen and (max-width: 768px) {
+
+    html {
+      height: 100vh;
+    }
 
     body {
       margin: 1px auto 5px auto;
